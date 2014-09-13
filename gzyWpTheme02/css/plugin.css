@@ -1,0 +1,132 @@
+/*侧滑部分 开始*/
+.sliderbox {
+	width: 960px;
+	height: 360px;
+	position: relative;
+	margin-top: 20px;
+	/*margin-bottom: 20px;*/
+	border: 1px solid #1b926c;
+	overflow: hidden;
+}
+.sliderbox img {
+	width: 320px;
+	height: 160px;
+}
+.sliderbox .items {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 960px;
+}
+.sliderbox .items .active {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.sliderbox .items div {
+	position: absolute;
+	left: 0px;
+	top: 360px;
+	width: 100%;
+}
+.sliderbox .goNext, .sliderbox .goPre {
+	position: absolute;
+	width: 38px;
+	height: 70px;
+	font-size: 50px;
+	font-weight: 900;
+	background-color: #808080;
+	color: white;
+	cursor: pointer;
+	opacity: 0.5;
+}
+.sliderbox .goNext {
+	right: 0px;
+	top: 145px;
+}
+.sliderbox .goPre {
+	left: 0px;
+	top: 145px;
+}
+.sliderbox .goNext:hover, .sliderbox .goPre:hover {
+	opacity: 0.8;
+}
+/*侧滑部分 结束*/
+/*上下左右滑动效果 开始*/
+.hovereasewrapper {
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #1b926c;
+}
+.hovereaseinwrapper {
+	display: block;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+}
+.backg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 200px;
+	width:100%;
+	/*background: #eee;*/
+}
+.frontg {
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	background: rgba(31,166,122,0.8);
+	display: none;
+	color:white;
+	box-sizing:border-box;
+	padding:10px;
+}
+.frontghoverBeforTop {
+	display: block;
+	left: 0%;
+	top: -100%;
+}
+.frontghoverTop {
+	display: block;
+	left: 0%;
+	top: 0%;
+	transition: all 300ms ease;
+	-webkit-transition: all 300ms ease;
+}
+/*上下左右滑动效果 结束*/
+/*去顶部插件 开始*/
+.gotop {
+	position: absolute;
+	top: 450px;
+	left: 1250px;
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	border: 3px solid lightblue;
+	cursor: pointer;
+	display:none;
+}
+.gotop .arrow {
+	border: 15px solid;
+	height: 0px;
+	width: 0px;
+	border-color: transparent transparent lightblue transparent;
+	position: absolute;
+	left: 5px;
+	top: -5px;
+}
+.gotop .arrow .after {
+	position: absolute;
+	left: 3px;
+	top: 6px;
+	border: 11px solid;
+	height: 0px;
+	width: 0px;
+	border-color: transparent transparent white transparent;
+	position: absolute;
+	left: -11px;
+	top: -9px;
+}
+
+/*去顶部插件 结束*/
